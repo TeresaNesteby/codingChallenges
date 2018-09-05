@@ -4,12 +4,9 @@
 function LongestWord(sen) {
    var arrayOfWords = sen.split(" ");
    arrayOfWords.sort();
-
-  // code goes here
   return arrayOfWords[0];
 
 }
 
-// keep this function call here
 LongestWord("I love dogs") == "love";
 

@@ -1,6 +1,6 @@
 // Have the function LetterChanges(str) take the str parameter being passed and modify it using the following algorithm. Replace every letter in the string with the letter following it in the alphabet (ie. c becomes d, z becomes a). Then capitalize every vowel in this new string (a, e, i, o, u) and finally return this modified string.
 
-function LetterChanges(str) {
+function letterChanges(str) {
  var i;
  var stringOfNumbers = "";
 
@@ -10,10 +10,18 @@ function LetterChanges(str) {
       console.log(newAscii)
       stringOfNumbers+=newAscii
   }
+
+  for (i = 0; i < stringOfNumbers.length; i++) {
+      if (stringOfNumbers[i] == "a" || "e" || "i" || "o" || "u"){
+        stringOfNumbers[i].toUpperCase();
+  }
+}
+
+
   return stringOfNumbers;
 }
 
-console.log(LetterChanges("345"))
+console.log(letterChanges("be"))
 
 
 
